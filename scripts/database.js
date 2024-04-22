@@ -247,7 +247,7 @@ export const getPeruLandmarks = () => {
     return peruData.landmarks.map(landmarks => ({...landmarks}))
 }
 
-// Ireland data for landmarks, cities, and celebs and the export functions
+//  data for landmarks, cities, and celebs and the export functions
 const ireland = {
     cities: [
         {
