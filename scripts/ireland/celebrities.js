@@ -1,0 +1,1 @@
+import { getIrelandcelebrities } from "../database.js";
