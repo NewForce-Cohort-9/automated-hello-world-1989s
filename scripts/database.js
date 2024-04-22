@@ -37,7 +37,7 @@ const portugalData = {
             name: 'Cristiano Ronaldo',
             pic: 'https://image-cdn.essentiallysports.com/wp-content/uploads/2023-12-01T201553Z_1606558509_UP1EJC11KAG4C_RTRMADP_3_SOCCER-SAUDI-ALH-ANA-REPORT.jpg',
             troll1: 'only 6ft2',
-            trolll2: 'famous for kicking a ball and sometimes kicking the ball far',
+            troll2: 'famous for kicking a ball and sometimes kicking the ball far',
             troll3: 'think he\'s too famous to pay taxes',
             troll4: 'another dude'
         }, {
@@ -80,7 +80,9 @@ export const getPortugalCelebs = () => {
 
 export const getPortugalLandmarks = () => {
     return portugalData.landmarks.map(landmarks => ({...landmarks}))
-}//........................****P E R U****................................//
+}
+
+//........................****P E R U****................................//
 const peruData = {
     landmarks: [
         { 

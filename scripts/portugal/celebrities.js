@@ -8,8 +8,8 @@ export const portugalCelebsList = () => {
     let celebString = '<h3 class="people">FAMOUS PEOPLE</h3><div>'
     // go through each celeb
     for (const celeb of celebs) {
-
+        celebString += `<img src="${celeb.pic}"/>${celeb.troll1}${celeb.troll2}${celeb.troll3}${celeb.troll4}`
     }
-
+celebString += `</div>`
     
 }
