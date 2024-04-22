@@ -1,5 +1,5 @@
 //........................****P E R U****................................//
-const peruFactsDatabase = {
+const peruData = {
     landmarks: [
         { 
             name: "Machu Picchu", 
@@ -68,8 +68,14 @@ const peruFactsDatabase = {
     ]
 }
 
-export let getPeru = () => {
-    return peruFactsDatabase.landmarks.map(landmarks => ({...landmarks}))
-    return peruFactsDatabase.cities.map(cities => ({...cities}))
-    return peruFactsDatabase.famousPeople.map(famousPeople => ({...famousPeople}))
+export const getPeruCities = () => {
+    return peruData.cities.map(cities => ({...cities}))
+}
+
+export const getPeruCelebs = () => {
+    return peruData.celebrities.map(celebrities => ({...celebrities}))
+}
+
+export const getPeruLandmarks = () => {
+    return peruData.landmarks.map(landmarks => ({...landmarks}))
 }
