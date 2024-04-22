@@ -1,0 +1,1 @@
+import { getPortugalCities } from "../database.js";
