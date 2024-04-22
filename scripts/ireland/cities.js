@@ -1,0 +1,1 @@
+import { getIrelandcities } from "../database.js";
