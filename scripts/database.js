@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const japanData = {
     celebrities : [
         {
@@ -96,11 +95,8 @@ export const getCities = () => {
 export const getLocations = () => {
     return japanData.landmarks.map(landmarks => ({...landmarks}))
 }
-const portugalData = {
-=======
 
-            const portugalData = {
->>>>>>> main
+      const portugalData = {
     cities: [
         {
             name: 'Porto', 
@@ -119,7 +115,9 @@ const portugalData = {
             crimeIndex: 25.43,
             pic: 'https://joinatlantis.com/app/uploads/2023/08/iStock-1412885232-1680x1120.jpg'
         }
+    
     ], 
+
     celebrities: [
         {
             name: 'Jose Saramago',
@@ -140,16 +138,10 @@ const portugalData = {
             pic: 'https://image-cdn.essentiallysports.com/wp-content/uploads/2023-12-01T201553Z_1606558509_UP1EJC11KAG4C_RTRMADP_3_SOCCER-SAUDI-ALH-ANA-REPORT.jpg',
             troll1: 'only 6ft2',
             trolll2: 'famous for kicking a ball and sometimes kicking the ball far',
-<<<<<<< HEAD
             troll3: "think he's too famous to pay taxes",
             troll4: 'another dude'
         }, 
         {
-=======
-            troll3: 'think he\'s too famous to pay taxes',
-            troll4: 'another dude'
-        }, {
->>>>>>> main
             name: 'Alvaro Siza Vieira',
             pic: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2Y_pF7hPM-IVEdfX3XPooFO5-6l0qr17UvjCsr0IKRg&s',
             troll1: 'designs pretty buildings',
