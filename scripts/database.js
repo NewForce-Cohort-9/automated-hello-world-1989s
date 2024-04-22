@@ -1,3 +1,5 @@
+//........................****I R E L A N D****................................//
+
 const ireland = {
     cities: [
         {
@@ -58,7 +60,22 @@ const ireland = {
         }
     ]
 }
-            const portugalData = {
+
+export const getIrelandcities = () => {
+    return ireland.cities.map(city => ({...city}))
+}
+
+export const getIrelandlandmarks = () => {
+    return ireland.landmarks.map(landmark => ({...landmark}))
+}
+
+export const getIrelandcelebrities = () => {
+    return ireland.celebrities.map(celebrities =>({...celebrities}))
+}
+
+//........................****P O R T U G A L****................................//
+
+const portugalData = {
     cities: [
         {
             name: 'Porto', 
@@ -130,19 +147,6 @@ const ireland = {
     ]
 }
 
-
-export const getIrelandcities = () => {
-    return ireland.cities.map(city => ({...city}))
-}
-
-export const getIrelandlandmarks = () => {
-    return ireland.landmarks.map(landmark => ({...landmark}))
-}
-
-export const getIrelandcelebrities = () => {
-    return ireland.celebrities.map(celebrities =>({...celebrities}))
-}
-
 export const getPortugalCities = () => {
     return portugalData.cities.map(cities => ({...cities}))
 }
@@ -153,7 +157,9 @@ export const getPortugalCelebs = () => {
 
 export const getPortugalLandmarks = () => {
     return portugalData.landmarks.map(landmarks => ({...landmarks}))
-}//........................****P E R U****................................//
+}
+
+//........................****P E R U****................................//
 const peruData = {
     landmarks: [
         { 
@@ -228,7 +234,7 @@ export const getPeruCities = () => {
 }
 
 export const getPeruCelebs = () => {
-    return peruData.celebrities.map(celebrities => ({...celebrities}))
+    return peruData.famousPeople.map(famousPeople => ({...famousPeople}))
 }
 
 export const getPeruLandmarks = () => {
