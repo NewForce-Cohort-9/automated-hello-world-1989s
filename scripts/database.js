@@ -39,7 +39,7 @@ const portugalData = {
             troll1: 'only 6ft2',
             trolll2: 'famous for kicking a ball and sometimes kicking the ball far',
             troll3: 'think he\'s too famous to pay taxes',
-            troll4 'another dude'
+            troll4: 'another dude'
         }, {
             name: 'Alvaro Siza Vieira',
             pic: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2Y_pF7hPM-IVEdfX3XPooFO5-6l0qr17UvjCsr0IKRg&s',
