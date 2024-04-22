@@ -1,0 +1,1 @@
+import { getIrelandlandmarks } from "../database.js";
