@@ -1,1 +1,1 @@
-import { getCelebs } from "./database.js"
+import { getCelebs } from "../database.js"

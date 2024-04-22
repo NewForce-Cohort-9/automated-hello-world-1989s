@@ -87,13 +87,13 @@ const japanData = {
     ]
 }
 export const getCelebs = () => {
-    return celebDatabase.celebrities.map(celebrities => ({...celebrities}))
+    return japanData.celebrities.map(celebrities => ({...celebrities}))
 }
 export const getCities = () => {
-    return cityDatabase.cities.map(cities => ({...cities}))
+    return japanData.cities.map(cities => ({...cities}))
 }
 export const getLocations = () => {
-    return celebDatabase.landmarks.map(landmarks => ({...landmarks}))
+    return japanData.landmarks.map(landmarks => ({...landmarks}))
 }
 const portugalData = {
     cities: [
