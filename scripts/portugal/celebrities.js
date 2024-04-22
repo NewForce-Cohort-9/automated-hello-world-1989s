@@ -1,0 +1,1 @@
+import { getPortugalCelebs } from "../database.js";
