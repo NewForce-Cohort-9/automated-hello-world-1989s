@@ -163,7 +163,9 @@ export const getPortugalCelebs = () => {
 
 export const getPortugalLandmarks = () => {
     return portugalData.landmarks.map(landmarks => ({...landmarks}))
-}//........................****P E R U****................................//
+}
+
+//........................****P E R U****................................//
 const peruData = {
     landmarks: [
         { 
