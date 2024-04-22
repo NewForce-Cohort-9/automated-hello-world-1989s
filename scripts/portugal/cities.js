@@ -5,7 +5,7 @@ export const portugalCitiesList = () => {
     //invoke function to get data
     const cities = getPortugalCities()
     // start building HTML syntax string
-    let citiesString = '<article class="cities"><h3>CITIES</h3><div>'
+    let citiesString = '<h3>CITIES</h3><div class="cities">'
     // go through each city
     for (const city of cities) {
         citiesString += `<img src="${cities.pic}"/>
@@ -14,6 +14,6 @@ export const portugalCitiesList = () => {
                         <li>Danger Rate: ${city.crimeIndex}</li>
                         </ul>`
     }
-citiesString += `</div></article>`
+citiesString += `</div>`
 return citiesString
 }
