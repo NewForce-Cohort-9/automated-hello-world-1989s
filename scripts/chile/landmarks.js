@@ -4,7 +4,7 @@ export const chileLandmarks = () => {
 
     const landmarks = getChileLandmarks()
 
-    let htmlString = `<article class="chile-landmarks">`
+    let htmlString = `<article class="chile_landmarks">`
 
     // HTML representations of chileLandmarks here
     for (const chileLandmarks of landmarks) {
