@@ -58,7 +58,8 @@ const ireland = {
         }
     ]
 }
-            const portugalData = {
+
+const portugalData = {
     cities: [
         {
             name: 'Porto', 
