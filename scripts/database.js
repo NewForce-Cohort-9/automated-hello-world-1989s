@@ -82,7 +82,7 @@ export const getChileCelebs = () => {
 
 // Japan data for landmarks, cities, and celebs and the export functions
 const japanData = {
-    celebrities : [
+    japanCelebrities : [
         {
             name:  "Ken Watanabe",
             image: "https://i.pinimg.com/originals/51/ea/eb/51eaebf633a66fb10cd189496f948b39.jpg",
@@ -116,7 +116,7 @@ const japanData = {
 
         },
     ],
-    landmarks: [
+    japanLandmarks: [
         {
             name: "Shinsaibashi-suji Shopping Street",
             image: "https://assets-global.website-files.com/63b68194bb4b0152e60727ee/63d23ba3517e0b6fa93e75b1_thumbnail%20(26).jpg",
@@ -141,37 +141,37 @@ const japanData = {
        }
 
     ],
-    cities: [
+    japanCities: [
         {
             name: "Osaka",
             image: "https://www.nippon.com/en/ncommon/contents/guide-to-japan/2339170/2339170.jpg",
-            crimeIndex: "20.06"
+            crimeIndex: 20.06
         },
         {
             name: "Hiroshima",
             image: "https://www.japantimes.co.jp/wp-content/uploads/2023/01/np_file_204219.jpeg",
-            crimeIndex: "35.29"
+            crimeIndex: 35.29
         },
         {
             name: "Sapporo",
             image: "https://en.japantravel.com/static/1440x960!/top-page-odori-park-winter.jpeg",
-            crimeIndex: "12.37"
+            crimeIndex: 12.37
         },
         {
             name: "Tokyo",
             image: "https://media.cntraveler.com/photos/60341fbad7bd3b27823c9db2/16:9/w_2560%2Cc_limit/Tokyo-2021-GettyImages-1208124099.jpg",
-            crimeIndex: "24.79"
+            crimeIndex: 24.79
         } 
     ]
 }
 export const getCelebs = () => {
-    return japanData.celebrities.map(celebrities => ({...celebrities}))
+    return japanData.japanCelebrities.map(japanCelebrities => ({...japanCelebrities}))
 }
 export const getCities = () => {
-    return japanData.cities.map(cities => ({...cities}))
+    return japanData.japanCities.map(japanCities => ({...japanCities}))
 }
 export const getLocations = () => {
-    return japanData.landmarks.map(landmarks => ({...landmarks}))
+    return japanData.japanLandmarks.map(japanLandmarks => ({...japanLandmarks}))
 }
 
 // Portual data for landmarks, cities, and celebs and the export functions
