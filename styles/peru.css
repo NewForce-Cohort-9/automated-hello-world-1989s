@@ -1,3 +1,10 @@
+body {
+  padding-top: 60px;
+  background-image: url('/scripts/peru/PeruImages/peruFlag.jpg');
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .topnav {
   display: block;
   padding: 1em;
@@ -17,64 +24,50 @@
   color: black;
 }
 
-/* Apply general body padding to prevent overlap with the fixed navbar */
-body {
-  padding-top: 60px; /* Adjust according to the height of your navbar */
-  background-image: url('/scripts/peru/PeruImages/peruFlag.jpg');
-  background-repeat: unset;
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
-
-/* Generic styles for sections with a class */
-section[class] {
-  display: table-column-group;
-  flex-direction: row; /* Aligns content vertically */
-  background-color: white; /* Sets background to white */
-  border: 1px solid #056a2a; /* Adds a border */
-  box-shadow: 0px 0px 10px #ccc; /* Adds a subtle shadow */
-}
-
-/* Specific styling for the peruHeader section */
 .peruHeader {
-  position: relative; /* Ensures it's positioned relative to its normal flow */
-  width: 100%; /* Full width of its container */
+  font-size: x-large;
   text-align: center;
-  padding: 20px 0; /* Adds vertical padding */
-  margin-top: 20px; /* Extra space above the header */
-  background-color: white; /* White background */
-  border-bottom: 1px solid #ccc; /* Separates it from sections below */
+  border: 5px solid rgb(3, 88, 24);
+  background-image: url(/scripts/peru/PeruImages/banner.jpg);
+  margin: 10px;
 }
 
-/* Adjust image sizes within each section if necessary */
-.peruCelebrities-card img, .peruCities-card img, .peruLandmarks-card img {
-  width: 30%; /* Ensures consistent sizing */
-}
-
-/* Styling for the rest of the sections remains unchanged */
-.peruCelebrities-card, .peruCities-card, .peruLandmarks-card {
-  height: auto; /* Allows the height to adjust based on content */
-}
-
-/* Rest of your existing styles for lists and hover effects can remain unchanged */
-section ul {
-  list-style: none;
-  padding: 0;
-}
-
-section li {
-  margin-bottom: 10px;
+.peruFacts {
+  bottom: 10px;
+  width: 100%;
   display: flex;
-  align-items: center;
+  justify-content: space-around;
+  border: 3px solid rgb(3, 88, 24);
+  background-color: white;
+  
 }
 
-section li img {
-  margin-left: 10px;
-  width: 150px;
+article[class] {
+ border: 2px solid black;
+ padding: 10px;
+ margin: 5px;
+ width: 30%;
+ position: relative;
+}
+
+article[class] img {
+  width: 10em;
   height: auto;
+  padding-top: 1.5em;
 }
 
-section li img:hover {
-  transform: scale(1.05);
-  transition: transform 0.2s ease-in-out;
+.peruLandmarks-card {
+  top: 20px;
+}
+
+.peruCelebrities-card {
+  top: -10px;
+}
+
+.peruCities-card {
+  top: 10px;
+}
+
+.peruCelebrities-card ul {
+  list-style-type: none;
 }
