@@ -174,7 +174,7 @@ export const getLocations = () => {
     return japanData.landmarks.map(landmarks => ({...landmarks}))
 }
 
-// Portual data for landmarks, cities, and celebs and the export functions
+// Portugal data for landmarks, cities, and celebs and the export functions
 const portugalData = {
     cities: [
         {
@@ -249,7 +249,6 @@ const portugalData = {
         }
     ]
 }
-
 
 export const getPortugalCities = () => {
     return portugalData.cities.map(cities => ({...cities}))
