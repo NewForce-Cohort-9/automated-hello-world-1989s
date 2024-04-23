@@ -1,0 +1,15 @@
+.chileHeader {
+text-align: center;
+}
+
+.chileLandmarks-card {
+    align-items: center;
+}
+
+.chileLandmarks-card img {
+    width: 30%;
+}
+
+.chileLandmarks__deathToll {
+    font-size: x-small;
+}

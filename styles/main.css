@@ -1,1 +1,18 @@
+.topnav {
+    display: block;
+    padding: 1em;
+    background-color: red;
+    text-align: center;
+  }
 
+  .topnav a {
+    text-decoration: none;
+    color: #f2f2f2;
+    font-size: 20px;
+    padding: 0.5em;
+  }
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
