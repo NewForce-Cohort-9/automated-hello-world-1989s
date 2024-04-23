@@ -24,3 +24,17 @@ const irelandHTMLcelebrities = celebIList()
 
 const irelandcelebritiesElement = document.querySelector(".irelandCEInfo")
 irelandcelebritiesElement.innerHTML = irelandHTMLcelebrities;
+
+import { citiesIList } from './ireland/cities.js'
+
+const irelandHTMLcities = citiesIList()
+
+const irelandcitiesElement = document.querySelector(".irelandCIInfo")
+irelandcitiesElement.innerHTML = irelandHTMLcities;
+
+import { landmarksIList } from './ireland/landmarks.js'
+
+const irelandHTMLlandmarks = landmarksIList()
+
+const irelandlandmarksElement = document.querySelector(".irelandLAInfo")
+irelandlandmarksElement.innerHTML = irelandHTMLlandmarks;
