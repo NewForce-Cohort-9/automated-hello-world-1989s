@@ -1,10 +1,10 @@
 //........................****C H I L E****................................//
 // import { chileLandmarks } from './chile/landmarks.js'
 
-
+// const chileHTMLlandmarks = chileLandmarks()
 
 // const chileLandmarksElement = document.querySelector(".chileInfo")
-// chileLandmarksElement.innerHTML = chileLandmarks();
+// chileLandmarksElement.innerHTML = chileHTMLlandmarks;
 
 //........................****P E R U****................................//
 
@@ -30,3 +30,11 @@ portugalCitiesHTML.innerHTML = portugalCitiesList();
 
 const portugalLandmarksHTML = document.querySelector("#portugalLandmarks")
 portugalLandmarksHTML.innerHTML = portugalLandmarksList();
+//........................****Ireland****................................//
+
+import { celebIList } from './ireland/celebrities.js'
+
+const irelandHTMLcelebrities = celebIList()
+
+const irelandcelebritiesElement = document.querySelector(".irelandCEInfo")
+irelandcelebritiesElement.innerHTML = irelandHTMLcelebrities;
