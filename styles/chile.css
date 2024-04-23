@@ -1,15 +1,50 @@
+body {
+    background-image: url("https://cdn.pixabay.com/photo/2015/11/12/16/03/flag-1040554_1280.png");
+    background-size: contain;
+   }
+
 .chileHeader {
 text-align: center;
+font-size: x-large;
 }
 
-.chileLandmarks-card {
-    align-items: center;
+/* Celebrities */
+.chile_celebs {
+    display: flex;
+}
+
+.chileCelebs-card img {
+    width: 20%;
+    image-resolution: 50px;
+}
+
+/* Landmarks */
+.chile_landmarks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .chileLandmarks-card img {
-    width: 30%;
+    width: 40%;
+    image-resolution: 50px;
 }
 
 .chileLandmarks__deathToll {
     font-size: x-small;
+}
+
+/* Cities */
+.chile_cities {
+    display: flex;
+    flex-direction: column;
+}
+
+.chileCities-card img {
+    width: 30%;
+    image-resolution: 50px;
+}
+
+.chileCities__dangerRate {
+    font-size: medium;
 }

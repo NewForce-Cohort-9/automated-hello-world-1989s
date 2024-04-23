@@ -25,12 +25,12 @@ const database = {
     chileCities: [
         {
             name: "Santiago",
-            image: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pexels.com%2Fsearch%2Fsantiago%2520de%2520chile%2F&psig=AOvVaw2UyNndS6xZ2-hwibgbrZAJ&ust=1713813695279000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCND7jNuD1IUDFQAAAAAdAAAAABAE',
+            image: 'https://images.pexels.com/photos/2017747/pexels-photo-2017747.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
             dangerRate: 72.11
         },
         {
             name: "San Pedro de Atacama",
-            image: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.gettyimages.com%2Fdetail%2Fphoto%2Fstreet-scene-from-san-pedro-de-atacama-chile-royalty-free-image%2F950874904&psig=AOvVaw04Bp2_VNwc4emD2OO6Say-&ust=1713814147917000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCND--rCF1IUDFQAAAAAdAAAAABAE',
+            image: 'https://media.gettyimages.com/id/950874904/photo/street-scene-from-san-pedro-de-atacama-chile.jpg?s=1024x1024&w=gi&k=20&c=PTtJF8votLhXyGxi8pBfBV-8mmCjwNbjN8F1xb6nTJQ=',
             dangerRate: 22
         },
         {
