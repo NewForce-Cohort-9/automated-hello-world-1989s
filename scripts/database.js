@@ -287,7 +287,7 @@ const peruData = {
             imageUrl: "PeruImages/Lake Titicaca.jpg"
         }
     ],
-    famousPeople: [
+    celebrities: [
         { 
             name: "Mario Vargas Llosa", 
             fact: "A famous Afro-Peruvian singer, composer, and politician.",
@@ -338,7 +338,7 @@ export const getPeruCities = () => {
 }
 
 export const getPeruCelebs = () => {
-    return peruData.famousPeople.map(famousPeople => ({...famousPeople}))
+    return peruData.famousPeople.map(celebrities => ({...celebrities}))
 }
 
 export const getPeruLandmarks = () => {
