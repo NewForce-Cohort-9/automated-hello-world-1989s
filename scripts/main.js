@@ -35,7 +35,7 @@ import { japanCelebrities } from './japan/celebrities.js'
 
 const japanHTMLCelebrities = japanCelebrities()
 
-const japanCelebritiesElement = document.querySelector(".japanCities")
+const japanCelebritiesElement = document.querySelector(".japanCelebrities")
 japanCelebritiesElement.innerHTML = japanHTMLCelebrities;
 // import { landmarks } from '../landmarks.js';
 // import { famousPeople } from '../famousPeople.js';
