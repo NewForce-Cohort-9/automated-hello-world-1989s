@@ -37,3 +37,19 @@ const japanHTMLCelebrities = japanCelebrities()
 
 const japanCelebritiesElement = document.querySelector(".japanCities")
 japanCelebritiesElement.innerHTML = japanHTMLCelebrities;
+// import { landmarks } from '../landmarks.js';
+// import { famousPeople } from '../famousPeople.js';
+// import { cities } from '../cities.js';
+
+// console.log('Landmarks:', landmarks);
+// console.log('Famous People:', famousPeople);
+// console.log('Cities:', cities);
+
+//........................****Ireland****................................//
+
+import { celebIList } from './ireland/celebrities.js'
+
+const irelandHTMLcelebrities = celebIList()
+
+const irelandcelebritiesElement = document.querySelector(".irelandCEInfo")
+irelandcelebritiesElement.innerHTML = irelandHTMLcelebrities;
