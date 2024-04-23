@@ -1,0 +1,80 @@
+.countryFacts {
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+}
+
+.countryHeader {
+    text-align: center;
+    background-color: red;
+}
+
+.people {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    float: left;
+}
+
+.landmarks {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cities {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.people img {
+    height: 100px;
+}
+
+.landmarks img {
+    width: 250px;
+}
+
+.landmarks p {
+    font-size: 0.5em;
+}
+
+.cities img {
+    height: auto;
+    width: 150px;
+}
+
+body {
+    background-image: url("https://s3.amazonaws.com/spoonflower/public/design_thumbnails/0556/5208/rPortugalSmall_shop_thumb.png");
+    color: chartreuse;
+    margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+#portugalPeople {
+    width: 25%;
+    border: thick double crimson;
+    margin-left: 4em;
+}
+
+#portugalCities {
+    align-self: center;
+    border: thick double crimson;
+    margin-right: 4em;
+    text-align: right;
+}
+
+#portugalLandmarks {
+    align-self: flex-end;
+    text-align: center;
+    border: thick double crimson;
+    width: 40%;
+}
+
+ul {
+    list-style-type: square;
+}
