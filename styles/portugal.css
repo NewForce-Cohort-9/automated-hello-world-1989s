@@ -11,7 +11,6 @@
 
 .people {
     display: flex;
-    width: 30%;
     flex-wrap: wrap;
     text-align: justify;
     padding: 0;
@@ -23,9 +22,6 @@
 .landmarks {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    width: 30%;
-    align-self: flex-end;
 }
 
 .cities {
@@ -39,13 +35,16 @@
 }
 
 .landmarks img {
-    height: 300px;
-    width: auto;
+    width: 250px;
+}
+
+.landmarks p {
+    font-size: 0.5em;
 }
 
 .cities img {
-    height: 250px;
-    width: auto;
+    height: auto;
+    width: 150px;
 }
 
 body {
@@ -57,5 +56,25 @@ body {
 }
 
 #portugalPeople {
-    width: 50%;
+    width: 25%;
+    border: thick double crimson;
+    margin-left: 4em;
+}
+
+#portugalCities {
+    align-self: center;
+    border: thick double crimson;
+    margin-right: 4em;
+    text-align: right;
+}
+
+#portugalLandmarks {
+    align-self: flex-end;
+    text-align: center;
+    border: thick double crimson;
+    width: 40%;
+}
+
+ul {
+    list-style-type: square;
 }
