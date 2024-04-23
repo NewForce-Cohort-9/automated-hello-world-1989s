@@ -1,31 +1,40 @@
 //........................****C H I L E****................................//
- import { chileLandmarks } from './chile/landmarks.js'
+// import { chileLandmarks } from './chile/landmarks.js'
 
- const chileHTMLlandmarks = chileLandmarks()
+// const chileHTMLlandmarks = chileLandmarks()
 
- const chileLandmarksElement = document.querySelector(".chileInfo")
- chileLandmarksElement.innerHTML = chileHTMLlandmarks;
+// const chileLandmarksElement = document.querySelector(".chileInfo")
+// chileLandmarksElement.innerHTML = chileHTMLlandmarks;
 
 //........................****P E R U****................................//
 
-import { peruLandmarks } from './peru/landmarks.js'
+// import { landmarks } from '../landmarks.js';
+// import { famousPeople } from '../famousPeople.js';
+// import { cities } from '../cities.js';
 
-const peruLandmarksElement = document.querySelector(".peruInfo")
-peruLandmarksElement.innerHTML = peruLandmarks();
+// console.log('Landmarks:', landmarks);
+// console.log('Famous People:', famousPeople);
+// console.log('Cities:', cities);
 
+// ........................****P O R T U G A L****................................//
 
-import { peruCelebrities } from './peru/celebrities.js'
+import { portugalCelebsList } from './portugal/celebrities.js';
+import { portugalCitiesList } from './portugal/cities.js';
+import { portugalLandmarksList } from './portugal/landmarks.js';
 
-const peruCelebritiesElement = document.querySelector(".peruInfo")
-peruCelebritiesElement.innerHTML = peruCelebrities();
+const portugalCelebsHTML = document.querySelector("#portugalPeople")
+portugalCelebsHTML.innerHTML = portugalCelebsList();
 
+const portugalCitiesHTML = document.querySelector("#portugalCities")
+portugalCitiesHTML.innerHTML = portugalCitiesList();
 
-import { peruCities } from './peru/cities.js'
+const portugalLandmarksHTML = document.querySelector("#portugalLandmarks")
+portugalLandmarksHTML.innerHTML = portugalLandmarksList();
+//........................****Ireland****................................//
 
-const peruCitiesElement = document.querySelector(".peruInfo")
-peruCitiesElement.innerHTML = peruCities();
+import { celebIList } from './ireland/celebrities.js'
 
+const irelandHTMLcelebrities = celebIList()
 
-console.log('Landmarks:', landmarks);
-console.log('Celebrities:', celebrities);
-console.log('Cities:', cities);
+const irelandcelebritiesElement = document.querySelector(".irelandCEInfo")
+irelandcelebritiesElement.innerHTML = irelandHTMLcelebrities;
