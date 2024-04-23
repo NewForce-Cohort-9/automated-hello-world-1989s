@@ -1,3 +1,8 @@
+body {
+  background-color: cadetblue;
+  font-family: cursive;
+}
+
 .topnav {
     display: block;
     padding: 1em;
@@ -20,4 +25,29 @@
   .topnav a.active {
     background-color: #04AA6D;
     color: white;
+  }
+
+  .travelco {
+    font-size: x-large;
+    text-align: center;
+    border: 5px solid pink;
+    margin: 10px;
+  }
+
+  .country {
+    display: flex;
+    border: 5px solid yellow;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .country img {
+    width: 10em;
+    height: auto;
+    padding-top: 1.5em;
+    
+  }
+
+  .country h4 {
+    margin-top: 4px;
   }
