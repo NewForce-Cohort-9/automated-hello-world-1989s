@@ -174,7 +174,7 @@ export const getLocations = () => {
     return japanData.landmarks.map(landmarks => ({...landmarks}))
 }
 
-// Portual data for landmarks, cities, and celebs and the export functions
+// Portugal data for landmarks, cities, and celebs and the export functions
 const portugalData = {
     cities: [
         {
@@ -216,8 +216,8 @@ const portugalData = {
             name: 'Cristiano Ronaldo',
             pic: 'https://image-cdn.essentiallysports.com/wp-content/uploads/2023-12-01T201553Z_1606558509_UP1EJC11KAG4C_RTRMADP_3_SOCCER-SAUDI-ALH-ANA-REPORT.jpg',
             troll1: 'only 6ft2',
-            trolll2: 'famous for kicking a ball and sometimes kicking the ball far',
-            troll3: "think he's too famous to pay taxes",
+            troll2: 'famous for kicking a ball and sometimes kicking the ball far',
+            troll3: 'think he\'s too famous to pay taxes',
             troll4: 'another dude'
         }, 
         {
@@ -249,7 +249,6 @@ const portugalData = {
         }
     ]
 }
-
 
 export const getPortugalCities = () => {
     return portugalData.cities.map(cities => ({...cities}))
