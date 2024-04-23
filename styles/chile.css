@@ -9,24 +9,32 @@ font-size: x-large;
 }
 
 /* Celebrities */
-.chile_celebs {
+.chileCelebs-card {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .chileCelebs-card img {
     width: 20%;
     image-resolution: 50px;
+    float: left;
+}
+
+.chileCelebs-card p {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    text-align: justify;
 }
 
 /* Landmarks */
 .chile_landmarks {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
 
 .chileLandmarks-card img {
-    width: 40%;
+    width: 15em;
     image-resolution: 50px;
 }
 
@@ -38,10 +46,12 @@ font-size: x-large;
 .chile_cities {
     display: flex;
     flex-direction: column;
+    max-width: fit-content;
+    align-items: flex-end;
 }
 
 .chileCities-card img {
-    width: 30%;
+    width: 10em;
     image-resolution: 50px;
 }
 

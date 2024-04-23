@@ -10,7 +10,7 @@ export const chileCelebs = () => {
     for (const chileCelebs of celebs) {
 
         htmlString += `<section class="chileCelebs-card">
-            <div><img  class="chileCelebs__image" src="${chileCelebs.image}"><p>${chileCelebs.fact}</p></div>
+            <div><img  class="chileCelebs__image" src="${chileCelebs.image}"><p>${chileCelebs.name} - ${chileCelebs.fact}</p></div>
             
         </section>`
     }

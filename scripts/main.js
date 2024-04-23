@@ -1,4 +1,6 @@
 //........................****C H I L E****................................//
+
+// Chile Celebs
 import { chileCelebs } from './chile/celebrities.js'
 
 const chileHTMLcelebs = chileCelebs()
@@ -6,6 +8,7 @@ const chileHTMLcelebs = chileCelebs()
 const chileCelebsElement = document.querySelector(".chilePeople")
 chileCelebsElement.innerHTML = chileHTMLcelebs;
 
+// Chile Landmarks
 import { chileLandmarks } from './chile/landmarks.js'
 
 const chileHTMLlandmarks = chileLandmarks()
@@ -13,6 +16,7 @@ const chileHTMLlandmarks = chileLandmarks()
 const chileLandmarksElement = document.querySelector(".chileInfo")
 chileLandmarksElement.innerHTML = chileHTMLlandmarks;
 
+// Chile Cities
 import { chileCities } from './chile/cities.js'
 
 const chileHTMLcities = chileCities()
