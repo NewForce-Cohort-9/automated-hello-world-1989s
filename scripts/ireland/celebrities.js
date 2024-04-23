@@ -7,10 +7,12 @@ export const celebIList = () => {
     let celebIHTML = ""
 
     for (const celeb of celebrities) {
-        celebIHTML += `${celeb.image}`
-        celebIHTML += `Name:${celeb.name}`
-        celebIHTML += `Fun Info: ${celeb.fact}`
+        celebIHTML += `<section class="irelandCeleb-card">
+            <div>${celeb.image}</div>
+            <div class="celebInfo">Name:${celeb.name} Fun Info: ${celeb.fact}</div>
+        </section>`
     }
      
     return celebIHTML
 } ;
+
