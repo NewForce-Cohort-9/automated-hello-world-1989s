@@ -1,16 +1,40 @@
 //........................****C H I L E****................................//
- import { chileLandmarks } from './chile/landmarks.js'
 
-  const chileHTMLlandmarks = chileLandmarks()
+// Chile Celebs
+import { chileCelebs } from './chile/celebrities.js'
 
-  const chileLandmarksElement = document.querySelector(".chileInfo")
-  if (chileLandmarksElement !== null){
+const chileHTMLcelebs = chileCelebs()
+
+const chileCelebsElement = document.querySelector(".chilePeople")
+if (chileCelebsElement !== null) {
+    chileCelebsElement.innerHTML = chileHTMLcelebs;
+}
+
+// Chile Landmarks
+import { chileLandmarks } from './chile/landmarks.js'
+
+const chileHTMLlandmarks = chileLandmarks()
+
+const chileLandmarksElement = document.querySelector(".chileInfo")
+if (chileLandmarksElement !== null) {
     chileLandmarksElement.innerHTML = chileHTMLlandmarks;
 }
-  
+
+// Chile Cities
+import { chileCities } from './chile/cities.js'
+
+const chileHTMLcities = chileCities()
+
+const chileCitiesElement = document.querySelector(".chilePlace")
+if (chileCitiesElement !== null) {
+    chileCitiesElement.innerHTML = chileHTMLcities;
+}
 
 //........................****P E R U****................................//
 
+// // import { landmarks } from '../landmarks.js';
+// // import { famousPeople } from '../famousPeople.js';
+// // import { cities } from '../cities.js';
 
 
 
@@ -56,15 +80,14 @@ if (portugalCelebsHTML !== null) {
    }
 
 const portugalCitiesHTML = document.querySelector("#portugalCities")
-
 if (portugalCitiesHTML !== null) {
- portugalCitiesHTML.innerHTML = portugalCitiesList();   
+    portugalCitiesHTML.innerHTML = portugalCitiesList();
 }
 
-
 const portugalLandmarksHTML = document.querySelector("#portugalLandmarks")
-if (portugalLandmarksHTML !== null)
-portugalLandmarksHTML.innerHTML = portugalLandmarksList();
+if (portugalLandmarksHTML !== null) {
+    portugalLandmarksHTML.innerHTML = portugalLandmarksList();
+}
 //........................****Ireland****................................//
 
 import { celebIList } from './ireland/celebrities.js'
@@ -72,8 +95,8 @@ import { celebIList } from './ireland/celebrities.js'
 const irelandHTMLcelebrities = celebIList()
 
 const irelandcelebritiesElement = document.querySelector(".irelandCEInfo")
-if (irelandcelebritiesElement !== null){
- irelandcelebritiesElement.innerHTML = irelandHTMLcelebrities;    
+if (irelandcelebritiesElement !== null) {
+    irelandcelebritiesElement.innerHTML = irelandHTMLcelebrities;    
 }
 
 

@@ -22,6 +22,11 @@ body {
     color: black;
   }
 
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
   .travelco {
     font-size: x-large;
     text-align: center;

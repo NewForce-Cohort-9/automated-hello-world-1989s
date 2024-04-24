@@ -1,15 +1,92 @@
+body {
+    background-image: url("https://cdn.pixabay.com/photo/2015/11/12/16/03/flag-1040554_1280.png");
+    background-size: contain;
+   }
+
 .chileHeader {
 text-align: center;
+font-size: xx-large;
 }
 
-.chileLandmarks-card {
+.chileFacts {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Celebrities */
+.chilePeople {
+    width: 25%;
+    border: thick double purple;
+    height: 300px;
+}
+
+.chile_celebs h3 {
+    text-align: center;
+}
+
+.chileCelebs-card {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.chileCelebs-card img {
+    width: 20%;
+    image-resolution: 50px;
+    float: left;
+}
+
+.chileCelebs-card p {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    text-align: justify;
+}
+
+/* Landmarks */
+.chileInfo {
+    border: thick double purple;
+}
+
+.chile_landmarks {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    width: 100%;
+}
+
+.chile_landmarks h3 {
+    text-align: center;
 }
 
 .chileLandmarks-card img {
-    width: 30%;
+    width: 15em;
+    image-resolution: 50px;
 }
 
 .chileLandmarks__deathToll {
     font-size: x-small;
+    color: black;
+}
+
+/* Cities */
+.chilePlace {
+    border: thick double purple;
+    height: 610px;
+}
+
+.chile_cities {
+    display: flex;
+    flex-direction: column;
+}
+
+.chile_cities h3 {
+    text-align: center;
+}
+
+.chileCities-card img {
+    width: 10em;
+    image-resolution: 50px;
+}
+
+.chileCities__dangerRate {
+    font-size: medium;
 }
