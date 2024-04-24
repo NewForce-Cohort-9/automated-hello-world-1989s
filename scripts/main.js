@@ -36,9 +36,37 @@ if (chileCitiesElement !== null) {
 // // import { famousPeople } from '../famousPeople.js';
 // // import { cities } from '../cities.js';
 
-// console.log('Landmarks:', landmarks);
-// console.log('Famous People:', famousPeople);
-// console.log('Cities:', cities);
+
+
+import { japanLandmarks } from './japan/landmarks.js'
+
+const japanHTMLlandmarks = japanLandmarks()
+
+const japanLandmarksElement = document.querySelector(".japanInfo")
+if (japanLandmarksElement !== null){
+    japanLandmarksElement.innerHTML = japanHTMLlandmarks;
+}
+
+
+import { japanCities } from './japan/cities.js'
+
+const japanHTMLCities = japanCities()
+
+const japanCitiesElement = document.querySelector(".japanCities")
+if (japanCitiesElement !== null){
+    japanCitiesElement.innerHTML = japanHTMLCities;
+}
+
+
+import { japanCelebrities } from './japan/celebrities.js'
+
+const japanHTMLCelebrities = japanCelebrities()
+
+const japanCelebritiesElement = document.querySelector(".japanCelebrities")
+if (japanCelebritiesElement !== null){
+    japanCelebritiesElement.innerHTML = japanHTMLCelebrities;
+}
+
 
 // ........................****P O R T U G A L****................................//
 
@@ -48,8 +76,8 @@ import { portugalLandmarksList } from './portugal/landmarks.js';
 
 const portugalCelebsHTML = document.querySelector("#portugalPeople")
 if (portugalCelebsHTML !== null) {
-    portugalCelebsHTML.innerHTML = portugalCelebsList();
-}
+      portugalCelebsHTML.innerHTML = portugalCelebsList();
+   }
 
 const portugalCitiesHTML = document.querySelector("#portugalCities")
 if (portugalCitiesHTML !== null) {
