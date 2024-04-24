@@ -32,12 +32,38 @@ if (chileCitiesElement !== null) {
 
 //........................****P E R U****................................//
 
-// // import { landmarks } from '../landmarks.js';
-// // import { famousPeople } from '../famousPeople.js';
-// // import { cities } from '../cities.js';
+// Peru Celebs
+import { peruCelebsList } from './peru/celebrities.js'
+
+const peruHTMLcelebs = peruCelebsList()
+
+const peruCelebsElement = document.querySelector(".peruCelebrities-card")
+if (peruCelebsElement !== null) {
+    peruCelebsElement.innerHTML = peruHTMLcelebs;
+}
+
+// Peru Landmarks
+import { peruLandmarksList } from './peru/landmarks.js'
+
+const peruHTMLlandmarks = peruLandmarksList()
+
+const peruLandmarksElement = document.querySelector(".peruLandmarks-card")
+if (peruLandmarksElement !== null) {
+    peruLandmarksElement.innerHTML = peruHTMLlandmarks;
+}
+
+// Peru Cities
+import { peruCitiesList } from './peru/cities.js'
+
+const peruHTMLcities = peruCitiesList()
+
+const peruCitiesElement = document.querySelector(".peruCities-card")
+if (peruCitiesElement !== null) {
+    peruCitiesElement.innerHTML = peruHTMLcities;
+}
 
 
-
+//........................****J A P A N****................................//
 import { japanLandmarks } from './japan/landmarks.js'
 
 const japanHTMLlandmarks = japanLandmarks()

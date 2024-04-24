@@ -1,0 +1,73 @@
+body {
+  padding-top: 60px;
+  background-image: url('/scripts/peru/PeruImages/peruFlag.jpg');
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.topnav {
+  display: block;
+  padding: 1em;
+  background-color: red;
+  text-align: center;
+}
+
+.topnav a {
+  text-decoration: none;
+  color: #f2f2f2;
+  font-size: 20px;
+  padding: 0.5em;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.peruHeader {
+  font-size: x-large;
+  text-align: center;
+  border: 5px solid rgb(3, 88, 24);
+  background-image: url(/scripts/peru/PeruImages/banner.jpg);
+  margin: 10px;
+}
+
+.peruFacts {
+  bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  border: 3px solid rgb(3, 88, 24);
+  background-color: white;
+  
+}
+
+article[class] {
+ border: 2px solid black;
+ padding: 10px;
+ margin: 5px;
+ width: 30%;
+ position: relative;
+}
+
+article[class] img {
+  width: 10em;
+  height: auto;
+  padding-top: 1.5em;
+}
+
+.peruLandmarks-card {
+  top: 20px;
+}
+
+.peruCelebrities-card {
+  top: -10px;
+}
+
+.peruCities-card {
+  top: 10px;
+}
+
+.peruCelebrities-card ul {
+  list-style-type: none;
+}
