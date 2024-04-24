@@ -51,8 +51,9 @@ import { portugalCitiesList } from './portugal/cities.js';
 import { portugalLandmarksList } from './portugal/landmarks.js';
 
 const portugalCelebsHTML = document.querySelector("#portugalPeople")
-
-portugalCelebsHTML.innerHTML = portugalCelebsList();
+if (portugalCelebsHTML !== null) {
+      portugalCelebsHTML.innerHTML = portugalCelebsList();
+   }
 
 const portugalCitiesHTML = document.querySelector("#portugalCities")
 
