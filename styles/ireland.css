@@ -1,6 +1,7 @@
 body {
     background-image: url("https://static.vecteezy.com/system/resources/thumbnails/009/973/815/small/realistic-ireland-national-waving-flag-smooth-4k-seemless-loop-free-video.jpg");
-}
+   
+  }
 
 .topnav {
     display: block;
@@ -23,9 +24,24 @@ body {
     color: black;
   }
 
+  .irelandHeader {
+    display: flex;
+    justify-content: center;
+  }
+
+  .wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+  }
+
   .irelandCEInfo {
+    width: 10em;
+
     display: flex;
     border: 2px dotted yellowgreen;
+    flex-direction: column;
   }
 
   .irelandCEInfo img {
@@ -34,8 +50,10 @@ body {
   }
 
   .irelandCIInfo {
+    width: 10em;
     display: flex;
     border: 3px solid pink;
+    flex-direction: column;
   }
 
   .irelandCIInfo img {
@@ -44,8 +62,10 @@ body {
   }
 
   .irelandLAInfo {
+    width: 10em;
     display: flex;
     border: 4px solid blue;
+    flex-direction: column;
   }
 
   .irelandLAInfo img {
