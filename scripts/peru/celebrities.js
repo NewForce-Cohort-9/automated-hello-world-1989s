@@ -2,19 +2,19 @@ import { getPeruCelebs } from "../database.js"
 
 export const peruCelebrities = () => {
 
-    const landmarks = getPeruCelebs()
+    const celebs = getPeruCelebs()
 
-    let htmlString = `<article class="peru_celebs">`
+    let htmlString = `<article class="peruCelebrities-card">`
 
     // HTML representations of peruCelebrities here
-    for (const peruCelebs of celebs) {
+    for (const celebrities of celebs) {
 
-        htmlString += `<section class="peruCelebs-card">
-            <div><img  class="peruCelebs__image" src="${peruCelebrities.image}"></div>
-            <div class="peruCities__dangerRate">${peruCelebrities.dangerRate}</div>
+        htmlString += `<article class="peruCelebrities-card">
+            <div><img  class="peruCelebrities-card__image" src="${peruCelebrities.image}"></div>
+            <div class="peruCelebrities-card__fact">${peruCelebrities.fact}</div>
         </section>`
     }
-    htmlString += `</section>`
+    htmlString += `</article>`
 
     return htmlString
 }
