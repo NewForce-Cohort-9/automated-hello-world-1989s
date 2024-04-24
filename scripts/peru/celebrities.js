@@ -1,20 +1,15 @@
-import { getPeruCelebs } from "../database.js"
+import { getPeruCelebs } from "../database.js";
 
-export const peruCelebrities = () => {
-
+// set up function to export celebs list
+export const peruCelebsList = () => {
+    //invoke function to get data
     const celebs = getPeruCelebs()
-
-    let htmlString = `<article class="peruCelebrities-card">`
-
-    // HTML representations of peruCelebrities here
-    for (const celebrities of celebs) {
-
-        htmlString += `<article class="peruCelebrities-card">
-            <div><img  class="peruCelebrities-card__image" src="${peruCelebrities.image}"></div>
-            <div class="peruCelebrities-card__fact">${peruCelebrities.fact}</div>
-        </section>`
+    // start building HTML syntax string
+    let celebString = '<article class="peruCelebrities-card"><h3>Famous People</h3>'
+    // go through each celeb
+    for (const celeb of celebs) {
+        celebString += `<img src="${celeb.pic}"/>${celeb.fact}`
     }
-    htmlString += `</article>`
-
-    return htmlString
+celebString += `</article>`
+return celebString
 }

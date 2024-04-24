@@ -1,20 +1,19 @@
-import { getPeruCities } from "../database.js"
+import { getPeruCities } from "../database.js";
 
-export const peruCities = () => {
-
-    const landmarks = getPeruCities()
-
-    let htmlString = `<article class="peru_cities">`
-
-    // HTML representations of peruCities here
-    for (const peruCities of cities) {
-
-        htmlString += `<section class="peruCities-card">
-            <div><img  class="peruCities__image" src="${peruCities.image}"></div>
-            <div class="peruCities__dangerRate">${peruCities.dangerRate}</div>
-        </section>`
+// set up function to export celebs list
+export const peruCitiesList = () => {
+    //invoke function to get data
+    const cities = getPeruCities()
+    // start building HTML syntax string
+    let cityString = '<article class="peruCities-card"><h2>Cities</h2>'
+    // go through each celeb
+    for (const city of cities) {
+        citiesString += `<ul>
+                        <img src="${city.pic}"/>
+                        <li><h2>${city.name}</h2></li>
+                        <li>Danger Rate: ${city.dangerRate}</li>
+                        </ul>`
     }
-    htmlString += `</section>`
-
-    return htmlString
+cityString += `</article>`
+return cityString
 }
