@@ -23,12 +23,20 @@ import { portugalCitiesList } from './portugal/cities.js';
 import { portugalLandmarksList } from './portugal/landmarks.js';
 
 const portugalCelebsHTML = document.querySelector("#portugalPeople")
-portugalCelebsHTML.innerHTML = portugalCelebsList();
+if (portugalCelebsHTML !== null) {
+ portugalCelebsHTML.innerHTML = portugalCelebsList();   
+}
+
 
 const portugalCitiesHTML = document.querySelector("#portugalCities")
-portugalCitiesHTML.innerHTML = portugalCitiesList();
+
+if (portugalCitiesHTML !== null) {
+ portugalCitiesHTML.innerHTML = portugalCitiesList();   
+}
+
 
 const portugalLandmarksHTML = document.querySelector("#portugalLandmarks")
+if (portugalLandmarksHTML !== null)
 portugalLandmarksHTML.innerHTML = portugalLandmarksList();
 //........................****Ireland****................................//
 
@@ -37,4 +45,27 @@ import { celebIList } from './ireland/celebrities.js'
 const irelandHTMLcelebrities = celebIList()
 
 const irelandcelebritiesElement = document.querySelector(".irelandCEInfo")
-irelandcelebritiesElement.innerHTML = irelandHTMLcelebrities;
+if (irelandcelebritiesElement !== null){
+ irelandcelebritiesElement.innerHTML = irelandHTMLcelebrities;    
+}
+
+
+import { citiesIList } from './ireland/cities.js'
+
+const irelandHTMLcities = citiesIList()
+
+const irelandcitiesElement = document.querySelector(".irelandCIInfo")
+if (irelandcitiesElement !== null) {
+ irelandcitiesElement.innerHTML = irelandHTMLcities;   
+}
+
+
+import { landmarksIList } from './ireland/landmarks.js'
+
+const irelandHTMLlandmarks = landmarksIList()
+
+const irelandlandmarksElement = document.querySelector(".irelandLAInfo")
+if (irelandlandmarksElement !== null) {
+irelandlandmarksElement.innerHTML = irelandHTMLlandmarks;
+}
+
