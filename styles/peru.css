@@ -1,0 +1,36 @@
+body {
+    background-image: url(/scripts);
+}
+
+.topnav {
+    display: block;
+    padding: 1em;
+    background-color: red;
+    text-align: center;
+  }
+
+  .topnav a {
+    text-decoration: none;
+    color: #f2f2f2;
+    font-size: 20px;
+    padding: 0.5em;
+  }
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+.peruFacts {
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+}
+
+.peruHeader {
+    text-align: center;
+    background-color: red;
+}
+
+
+

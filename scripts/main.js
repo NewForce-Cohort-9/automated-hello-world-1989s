@@ -1,20 +1,17 @@
 //........................****C H I L E****................................//
-// import { chileLandmarks } from './chile/landmarks.js'
+import { chileLandmarks } from './chile/landmarks.js'
 
-// const chileHTMLlandmarks = chileLandmarks()
+const chileHTMLlandmarks = chileLandmarks()
 
-// const chileLandmarksElement = document.querySelector(".chileInfo")
-// chileLandmarksElement.innerHTML = chileHTMLlandmarks;
+const chileLandmarksElement = document.querySelector(".chileInfo")
+chileLandmarksElement.innerHTML = chileHTMLlandmarks;
 
 //........................****P E R U****................................//
 
-// import { landmarks } from '../landmarks.js';
-// import { famousPeople } from '../famousPeople.js';
-// import { cities } from '../cities.js';
+import { landmarks } from './peru/landmarks.js';
+import { famousPeople } from './peru/celebrities.js';
+import { cities } from './peru/cities.js';
 
-// console.log('Landmarks:', landmarks);
-// console.log('Famous People:', famousPeople);
-// console.log('Cities:', cities);
 
 // ........................****P O R T U G A L****................................//
 
