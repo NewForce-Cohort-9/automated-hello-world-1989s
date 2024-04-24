@@ -6,7 +6,9 @@ import { chileCelebs } from './chile/celebrities.js'
 const chileHTMLcelebs = chileCelebs()
 
 const chileCelebsElement = document.querySelector(".chilePeople")
-chileCelebsElement.innerHTML = chileHTMLcelebs;
+if (chileCelebsElement !== null) {
+    chileCelebsElement.innerHTML = chileHTMLcelebs;
+}
 
 // Chile Landmarks
 import { chileLandmarks } from './chile/landmarks.js'
@@ -14,7 +16,9 @@ import { chileLandmarks } from './chile/landmarks.js'
 const chileHTMLlandmarks = chileLandmarks()
 
 const chileLandmarksElement = document.querySelector(".chileInfo")
-chileLandmarksElement.innerHTML = chileHTMLlandmarks;
+if (chileLandmarksElement !== null) {
+    chileLandmarksElement.innerHTML = chileHTMLlandmarks;
+}
 
 // Chile Cities
 import { chileCities } from './chile/cities.js'
@@ -22,7 +26,9 @@ import { chileCities } from './chile/cities.js'
 const chileHTMLcities = chileCities()
 
 const chileCitiesElement = document.querySelector(".chilePlace")
-chileCitiesElement.innerHTML = chileHTMLcities;
+if (chileCitiesElement !== null) {
+    chileCitiesElement.innerHTML = chileHTMLcities;
+}
 
 //........................****P E R U****................................//
 
@@ -36,18 +42,24 @@ chileCitiesElement.innerHTML = chileHTMLcities;
 
 // ........................****P O R T U G A L****................................//
 
-// import { portugalCelebsList } from './portugal/celebrities.js';
-// import { portugalCitiesList } from './portugal/cities.js';
-// import { portugalLandmarksList } from './portugal/landmarks.js';
+import { portugalCelebsList } from './portugal/celebrities.js';
+import { portugalCitiesList } from './portugal/cities.js';
+import { portugalLandmarksList } from './portugal/landmarks.js';
 
-// const portugalCelebsHTML = document.querySelector("#portugalPeople")
-// portugalCelebsHTML.innerHTML = portugalCelebsList();
+const portugalCelebsHTML = document.querySelector("#portugalPeople")
+if (portugalCelebsHTML !== null) {
+    portugalCelebsHTML.innerHTML = portugalCelebsList();
+}
 
-// const portugalCitiesHTML = document.querySelector("#portugalCities")
-// portugalCitiesHTML.innerHTML = portugalCitiesList();
+const portugalCitiesHTML = document.querySelector("#portugalCities")
+if (portugalCitiesHTML !== null) {
+    portugalCitiesHTML.innerHTML = portugalCitiesList();
+}
 
-// const portugalLandmarksHTML = document.querySelector("#portugalLandmarks")
-// portugalLandmarksHTML.innerHTML = portugalLandmarksList();
+const portugalLandmarksHTML = document.querySelector("#portugalLandmarks")
+if (portugalLandmarksHTML !== null) {
+    portugalLandmarksHTML.innerHTML = portugalLandmarksList();
+}
 //........................****Ireland****................................//
 
 // import { celebIList } from './ireland/celebrities.js'

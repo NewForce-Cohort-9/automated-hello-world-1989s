@@ -4,7 +4,7 @@ export const chileCelebs = () => {
 
     const celebs = getChileCelebs()
 
-    let htmlString = `<article class="chile_celebs">`
+    let htmlString = `<article class="chile_celebs"><h3>FAMOUS PEOPLE</h3>`
 
     // HTML representations of chileCelebs here
     for (const chileCelebs of celebs) {
