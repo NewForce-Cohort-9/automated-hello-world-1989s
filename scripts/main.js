@@ -62,9 +62,32 @@ if (portugalLandmarksHTML !== null) {
 }
 //........................****Ireland****................................//
 
-// import { celebIList } from './ireland/celebrities.js'
+import { celebIList } from './ireland/celebrities.js'
 
-// const irelandHTMLcelebrities = celebIList()
+const irelandHTMLcelebrities = celebIList()
 
-// const irelandcelebritiesElement = document.querySelector(".irelandCEInfo")
-// irelandcelebritiesElement.innerHTML = irelandHTMLcelebrities;
+const irelandcelebritiesElement = document.querySelector(".irelandCEInfo")
+if (irelandcelebritiesElement !== null) {
+    irelandcelebritiesElement.innerHTML = irelandHTMLcelebrities;    
+}
+
+
+import { citiesIList } from './ireland/cities.js'
+
+const irelandHTMLcities = citiesIList()
+
+const irelandcitiesElement = document.querySelector(".irelandCIInfo")
+if (irelandcitiesElement !== null) {
+ irelandcitiesElement.innerHTML = irelandHTMLcities;   
+}
+
+
+import { landmarksIList } from './ireland/landmarks.js'
+
+const irelandHTMLlandmarks = landmarksIList()
+
+const irelandlandmarksElement = document.querySelector(".irelandLAInfo")
+if (irelandlandmarksElement !== null) {
+irelandlandmarksElement.innerHTML = irelandHTMLlandmarks;
+}
+
