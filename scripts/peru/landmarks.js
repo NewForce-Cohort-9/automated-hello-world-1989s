@@ -9,8 +9,11 @@ export const peruLandmarksList = () => {
     // go through each landmark
     for (const landmark of landmarks) {
         landmarkString += `<ul>
-                        <img src="${landmark.pic}"/>
+                        <img src="${landmark.imageUrl}"/>
                         <li><h3>${landmark.name}</h3></li>
+                        <li>${landmark.deathToll}</li>
+
+
                         </ul>`
     }
 landmarkString += `</article>`

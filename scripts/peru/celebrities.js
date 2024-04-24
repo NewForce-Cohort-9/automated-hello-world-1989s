@@ -8,7 +8,7 @@ export const peruCelebsList = () => {
     let celebString = '<article class="peruCelebrities-card"><h3>Famous People</h3>'
     // go through each celeb
     for (const celeb of celebs) {
-        celebString += `<img src="${celeb.pic}"/>${celeb.fact}`
+        celebString += `<img src="${celeb.imageUrl}"/>${celeb.fact}`
     }
 celebString += `</article>`
 return celebString

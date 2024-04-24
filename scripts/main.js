@@ -33,9 +33,9 @@ if (chileCitiesElement !== null) {
 //........................****P E R U****................................//
 
 // Peru Celebs
-import { peruCelebs } from './peru/celebrities.js'
+import { peruCelebsList } from './peru/celebrities.js'
 
-const peruHTMLcelebs = peruCelebs()
+const peruHTMLcelebs = peruCelebsList()
 
 const peruCelebsElement = document.querySelector(".peruCelebrities-card")
 if (peruCelebsElement !== null) {
@@ -43,9 +43,9 @@ if (peruCelebsElement !== null) {
 }
 
 // Peru Landmarks
-import { peruLandmarks } from './peru/landmarks.js'
+import { peruLandmarksList } from './peru/landmarks.js'
 
-const peruHTMLlandmarks = peruLandmarks()
+const peruHTMLlandmarks = peruLandmarksList()
 
 const peruLandmarksElement = document.querySelector(".peruLandmarks-card")
 if (peruLandmarksElement !== null) {
@@ -53,9 +53,9 @@ if (peruLandmarksElement !== null) {
 }
 
 // Peru Cities
-import { peruCities } from './peru/cities.js'
+import { peruCitiesList } from './peru/cities.js'
 
-const peruHTMLcities = peruCities()
+const peruHTMLcities = peruCitiesList()
 
 const peruCitiesElement = document.querySelector(".peruCities-card")
 if (peruCitiesElement !== null) {

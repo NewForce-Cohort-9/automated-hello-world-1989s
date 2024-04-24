@@ -8,8 +8,8 @@ export const peruCitiesList = () => {
     let cityString = '<article class="peruCities-card"><h2>Cities</h2>'
     // go through each celeb
     for (const city of cities) {
-        citiesString += `<ul>
-                        <img src="${city.pic}"/>
+        cityString += `<ul>
+                        <img src="${city.imageUrl}"/>
                         <li><h2>${city.name}</h2></li>
                         <li>Danger Rate: ${city.dangerRate}</li>
                         </ul>`
